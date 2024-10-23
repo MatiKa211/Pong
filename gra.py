@@ -42,13 +42,13 @@ def move_ball():
         score1 += 1
         reset_ball()
         countdown()
-        reset_paddles()  # Resetuj pozycje paletek
+        reset_paddles()  
 
     if ball.bottom >= screen_height:
         score2 += 1
         reset_ball()
         countdown()
-        reset_paddles()  # Resetuj pozycje paletek
+        reset_paddles()  
 
 def reset_ball():
     global current_speed_x, current_speed_y
@@ -58,8 +58,8 @@ def reset_ball():
     current_speed_y *= -1
 
 def reset_paddles():
-    My_paddle.x = x  # Resetuj paletkę gracza
-    Opponent_paddle.x = x  # Resetuj paletkę przeciwnika
+    My_paddle.x = x  
+    Opponent_paddle.x = x 
 
 def countdown():
     for i in range(3, 0, -1):
